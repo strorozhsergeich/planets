@@ -8,7 +8,7 @@
  git config --local init.defaultBranch "main"
  git config --local color.status auto
  git config --local color.ui true
- git filter-branch --env-filter 'if [ "$GIT_AUTHOR_EMAIL" = "user.email=28973204+strorozhsergeich@users.noreply.github.com" ]; then
+ git filter-branch --env-filter 'if [ "$GIT_AUTHOR_EMAIL" = ""${prinvate_email} ]; then
      GIT_AUTHOR_EMAIL='28973204+strorozhsergeich@users.noreply.github.com';
      GIT_AUTHOR_NAME=storozhsergeich;
      GIT_COMMITTER_EMAIL=$GIT_AUTHOR_EMAIL;
