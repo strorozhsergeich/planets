@@ -1,2 +1,4 @@
-*.dat
-results/
+**/*.dat 
+log_*
+!log_01
+c.dat
